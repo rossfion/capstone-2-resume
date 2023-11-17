@@ -1,0 +1,223 @@
+/* Site Colors from colorhunt.co 
+Devonshire warm gray #F5EFE7
+coffeefoam - looks like a pinkish brown #D8C4B6
+queenblue #4F709C
+delftblue - a darker blue than queenblue #213555
+
+rgb(245, 239, 231)
+rgb(216, 196, 182)
+rgb(79, 112, 156)
+rgb(33, 53, 85)
+*/
+
+html, body {
+	min-height: 100%;
+  
+}
+
+body {
+	font-family: 'Open Sans', sans serif;
+	padding:0;
+	margin:0;
+}
+
+
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	font-size:2.5rem;
+	color: #213555;
+}
+
+.resume h2 {
+	font-family: 'Libre Baskerville', serif;
+	font-style:italic;
+	font-size:1.5rem;
+	color: #4F709C;
+	letter-spacing:0.2em;
+}
+
+a {
+    color: #4F709C;
+}
+a:hover {
+    color: #D8C4B6;
+    text-decoration: none;
+}
+
+footer a {
+    color: #4F709C;
+}
+footer a:hover {
+    color: #D8C4B6;
+}
+
+.btn {
+    /* background: #3c8453;*/
+	background:#213555;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+/* Home Page Styles */
+
+.home-page {
+	background:url(../images/bg-home-office-studio.jpg) no-repeat;
+	background-size: cover;
+	display:flex;
+	flex-direction:column;	
+}
+
+.home, .resume .content-wrapper {
+	margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+.content-bg {
+	background:rgb(255 255 255 / 0.9); /* opacity added */
+	padding:30px;
+}
+
+.summary-text {
+	font-family: 'Open Sans', sans serif;
+}
+
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+/* Resume section */
+.resume {
+	background: #F5EFE7;
+}
+
+.resume header::before {
+    background: url(../images/bg-home-office-studio.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 1200px){
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 500px){
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+
+/* Projects
+------------------------------------*/
+.project-item {
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+}
+.project-details h3, p {
+	margin-top: 0;
+}
+@media screen and (min-width:860px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Work Experience
+------------------------------------*/
+.work-item {
+    margin: 30px 0;
+}
+.work-details h3, p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
+}
+
+
+/* Education
+------------------------------------*/
+.education-item {
+    margin: 30px 0;
+}
+.education-item p {
+    margin: 0;
+}
+
+
+footer {
+	background: #213555;
+	color:#d3d4d6;
+	/* the following code is from w3schools */
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+  text-align: center;
+}
+	
